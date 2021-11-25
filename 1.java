@@ -28,7 +28,7 @@ public class Main {
         {
             for(int i = 0; i < tab.length; i++)
             {
-                System.out.print(Math.round(tab[i]) + " ");
+                System.out.print(String.format("%.2f",tab[i]) + " ");
             }
         }
 
@@ -73,6 +73,38 @@ public class Main {
 
         }
 
+        public static double maximum(double[] tab, int n)
+        {
+            double max = tab[0];
+            for(int i = 0; i<tab.length; i ++)
+            {
+                if(max<tab[i])
+                {
+                    max = tab[i];
+                }
+            }
+            return max;
+        }
+
+        public static double minimum(double[] tab, int n)
+        {
+            double min = tab[0];
+            for( int i = 0; i<tab.length; i++)
+            {
+                if (min>tab[i])
+                {
+                    min = tab[i];
+                }
+            }
+            return min;
+        }
+
+        public static void nieparzyste(double[] tab)
+        {
+
+
+        }
+
     public static void main(String[] args)
     {
 
@@ -82,5 +114,8 @@ public class Main {
         System.out.println(srednia(tab, 10));
         System.out.println(mniejsze(tab, 10));
         wypisz_mniejsze(mniejsze(tab, 10));
-  }
-  }
+        System.out.println(maximum(tab, 10));
+        System.out.println(minimum(tab, 10));
+
+    }
+}
