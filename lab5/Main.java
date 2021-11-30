@@ -17,10 +17,10 @@ public class Main
         System.out.println(saver2.obliczMiesieczneOdsetki());
         System.out.println("zadanie 2");
         IntegerSet set = new IntegerSet();
-        set.insertElement(5);
-        set.insertElement(7);
-        set.insertElement(9);
-        set.insertElement(10);
-        set.deleteElement(9);
+        set.insertElement(1);
+        set.insertElement(2);
+        set.insertElement(3);
+        set.insertElement(4);
+        set.deleteElement(3);
     }
 }
